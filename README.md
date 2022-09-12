@@ -12,19 +12,19 @@ npm run dev
 
 ## 3. Docker build
 ```
-docker build -t nodejs-calculadora:v1 .
+docker build -t nodejs-invoke-reqres:v1 .
 ```
 
 ## 4. Docker run
 ```
-docker run --name con-nodejs-calculadora -p 4000:3000 nodejs-calculadora:v1
+docker run --name con-nodejs-invoke-reqres -p 4000:3000 nodejs-invoke-reqres:v1
 ```
 
 ## 5. Enviar a Dockerhub
 ```
 docker login –-u juliopari –-p *****
-docker tag nodejs-calculadora:v1 juliopari/nodejs-calculadora:v1
-docker push juliopari/nodejs-calculadora:v1
+docker tag nodejs-invoke-reqres:v1 juliopari/nodejs-invoke-reqres:v1
+docker push juliopari/nodejs-invoke-reqres:v1
 ```
 
 ## 5. Desplegar en Digital Ocean
