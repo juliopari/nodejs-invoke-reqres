@@ -1,5 +1,3 @@
-
-
 module.exports =    {
     PORT: 3000,
     LIST_USER: 'https://reqres.in/api/users?page=',
