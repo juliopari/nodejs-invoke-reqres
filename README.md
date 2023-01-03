@@ -14,10 +14,19 @@ npm run dev
 ```
 docker build -t nodejs-invoke-reqres:v1 .
 ```
+```
+docker images
+docker ps
+```
 
 ## 4. Docker run
 ```
 docker run --name con-nodejs-invoke-reqres -p 4000:3000 nodejs-invoke-reqres:v1
+```
+```
+docker images
+docker ps
+docker stop con-nodejs-invoke-reqres
 ```
 
 ## 5. Enviar a Dockerhub

@@ -1,16 +1,21 @@
 # digital-ocean
 
+## 0. Descargar kubeconfig y ubicar en "C:\Users\USER\.kube" con nombre "config" sin extensión
+```
+C:\Users\USER\.kube\config
+```
+
 ## 1. Listar namespace
 ```
 kubectl get ns
 ```
 
-## 2. Eliminar un namesace
+## 2. Eliminar un namespace
 ```
 kubectl delete ns <namespace>
 ```
 
-## 3. Crear namespace node
+## 3. Crear namespace node (ubicar en la carpeta /kubernetes/digital-ocean-deployment/)
 ```
 kubectl apply -f 00-namespace.yaml
 ```
@@ -19,6 +24,17 @@ kubectl apply -f 00-namespace.yaml
 ```
 kubectl -n nodejs-examples apply -f 01-nodejs-deployment-loadbalancer.yaml
 ```
+
+## 4.1 Listar deployments
+```
+kubectl -n nodejs-examples get deployments
+```
+
+## 4.2 Listar services
+```
+kubectl -n nodejs-examples get services
+```
+
 
 ## 5. Conocer la IP Pública: EXTERNAL-IP
 ```
